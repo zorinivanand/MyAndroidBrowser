@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context="ru.zorinivan.mybrowser.MainActivity"
     tools:layout_editor_absoluteY="81dp">
 
 
@@ -17,20 +17,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/baseline_send_24"
-        tools:ignore="VectorDrawableCompat"
-        android:layout_marginRight="8dp"
-        android:contentDescription="TODO" />
+        tools:ignore="VectorDrawableCompat" />
 
     <AutoCompleteTextView
         android:id="@+id/autoCompleteTextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
         android:layout_marginTop="8dp"
+        android:hint="Input URL"
         app:layout_constraintEnd_toStartOf="@+id/sendButton"
         app:layout_constraintStart_toEndOf="@+id/refreshButton"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="4dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/refreshButton"
@@ -42,8 +41,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/baseline_refresh_24"
         android:layout_marginLeft="4dp"
-        tools:ignore="VectorDrawableCompat"
-        android:contentDescription="TODO" />
+        tools:ignore="VectorDrawableCompat" />
 
     <ImageButton
         android:id="@+id/forwardButton"
@@ -55,8 +53,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/baseline_east_24"
         android:layout_marginLeft="4dp"
-        tools:ignore="VectorDrawableCompat"
-        android:contentDescription="TODO" />
+        tools:ignore="VectorDrawableCompat" />
 
     <ImageButton
         android:id="@+id/backButton"
@@ -68,8 +65,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/baseline_west_24"
         android:layout_marginLeft="8dp"
-        tools:ignore="VectorDrawableCompat"
-        android:contentDescription="TODO" />
+        tools:ignore="VectorDrawableCompat" />
 
     <ProgressBar
         android:id="@+id/progressBar"
